@@ -1,0 +1,20 @@
+---
+applications:
+
+- name: extensibility-demo-advanced
+  memory: 2048M
+  timeout: 300
+  random-route: true
+  path: application/target/extensibility-01-application.war
+  buildpacks:
+    - sap_java_buildpack
+  env:
+    TARGET_RUNTIME: Tomee7
+    SET_LOGGING_LEVEL: '{ROOT: INFO, com.sap.cloud.sdk: DEBUG}'
+    JBP_CONFIG_SAPJVM_MEMORY_SIZES: 'metaspace:128m..'
+  services:
+   - extensibility-demo-advanced-application-logs
+   - extensibility-demo-advanced-xsuaa
+   - extensibility-demo-advanced-destination
+   - extensibility-demo-advanced-connectivity
+

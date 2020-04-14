@@ -1,0 +1,12 @@
+---
+applications:
+- name: approuter
+  routes:
+    - route: approuter-ktedev.cfapps.eu10.hana.ondemand.com
+  path: approuter
+  memory: 1024M
+  env:
+    TENANT_HOST_PATTERN: 'approuter-(.*).cfapps.eu10.hana.ondemand.com'
+    destinations: '[{"name":"app-destination", "url" :"https://extensibility-demo-advanced-balanced-topi.cfapps.eu10.hana.ondemand.com","forwardAuthToken": true}]'
+  services:
+    - extensibility-demo-advanced-xsuaa

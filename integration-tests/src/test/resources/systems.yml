@@ -1,0 +1,10 @@
+---
+erp:
+  default: "ERP_001"
+  systems:
+    - alias: "ERP_001"
+      uri: "https://businesspartner-odata-mock-server-hilarious-wallaby.cfapps.eu10.hana.ondemand.com"
+ #     systemId: "MySystemId"           # optional, defaults to ""
+ #     sapClient: "001"                 # optional, defaults to default SAP client
+ #     locale: "en"                     # optional, defaults to English (US)
+      erpEdition: "cloud"              # optional, defaults to "cloud"

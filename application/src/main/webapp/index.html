@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>Welcome to Your Application!</title>
+<style>
+body {
+	font-family: Arial, sans-serif;
+	color: #333333;
+}
+
+a {
+	color: #0C7ECF;
+}
+
+li {
+	margin: 10px 0;
+}
+
+code {
+	font-family: Courier, monospace;
+	font-size: 95%;
+	padding: 0.2em;
+	padding-left: 0.4em;
+	padding-right: 0.4em;
+	background-color: #EBEBEB;
+	border-radius: 3px;
+}
+</style>
+</head>
+<body>
+	<h1>Welcome to Your xtensibility-demo-advanced App!</h1>
+	<p>
+		Call: <a href="hello">/hello </a> HelloWorldServlet - without
+		restrictions
+	</p>
+	<p>
+		Call: <a href="/businesspartners-simple">/businesspartners-simple</a> Business
+		Partner data - without restrictions
+	</p>
+	<p>
+		Call: <a href="/businesspartners-resilience">/businesspartners-resilience</a> Business
+		Partner data - with role based restriction (Display)
+	</p>
+	<h1>Debugging</h1>
+	<p>
+		Call: <a href="/debug">/debug </a> Read the HTTP - Request Headers (authorization : Bearer )-
+		afterwards use https://jwt.io/ to decode the JWT token
+	</p>
+</body>
+</html>
